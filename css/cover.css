@@ -30,6 +30,10 @@ body {
   max-width: 42em;
 }
 
+.cover-container-modified {
+  max-width: 42em;
+  max-height: 20px;
+}
 
 /*
  * Header
