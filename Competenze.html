@@ -59,7 +59,8 @@
                                                   in tempo reale sistemi complessi, come linee di produzione, impianti di energia,
                                                     e sistemi di trattamento delle acque, tra altri.
                                             </p>
-                                            <button type="button" class="btn btn-secondary">Leggi di più</button>
+                                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#scada">Leggi di più</button>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -195,6 +196,45 @@
             </div>
 
         </div>
+
+        <!-- Modale SCADA Movicon -->
+        <div class="modal fade" id="scada" tabindex="-1" aria-labelledby="tabellaScada" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="tabellaDiRicerca">Inserisci un libro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">ISBN</label>
+                    <input type="number" name="isbnIns" class="form-control" id="ISBN_Ins" max="9999999999999" placeholder="0000000000000 (13 numeri)">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Titolo</label>
+                    <input type="text" name="titoloIns" class="form-control" id="Titolo_Ins" maxlength="100" placeholder="Per chi suona la campana">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Genere</label>
+                    <input type="text" name="genereIns" class="form-control" id="Genere_Ins" maxlength="20" placeholder="Romanzo">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Pubblicazione</label>
+                    <input type="date" name="pubblicazioneIns" class="form-control" id="Pubblicazione_Ins" maxlength="10" placeholder="21/10/1940">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Autore</label>
+                    <input type="text" name="autoreIns" class="form-control" id="Autore_Ins" maxlength="30" placeholder="Ernest Hemingway">
+                </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
     </div>
 
 
